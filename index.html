@@ -179,6 +179,107 @@
         </div>
       </section>
     </main>
+    <!-- ///////////////////////Ahmed Abdelhameed ///////////////////
+    //////////////////////////////////////////////////////////// -->
+
+    <div class="maincontainer">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="container">
+        
+        <div class="item">
+          <div class="question">
+            <span>What are the school hours at Little Learners Academy?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="answer">
+            Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday.
+            We also offer extended care options for parents who need early drop-off or late pick-up.
+          </div>
+        </div>
+      
+        
+        <div class="item">
+          <div class="question">
+            <span>Is there a uniform policy for students?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="answer">
+            Yes, students are required to wear a uniform. This helps promote equality and a sense of community.
+          </div>
+        </div>
+      
+        
+        <div class="item">
+          <div class="question">
+            <span>What extracurricular activities are available for students?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="answer">
+            We offer sports, arts, music, and language clubs to enhance students’ learning experience.
+          </div>
+        </div>
+      
+        
+        <div class="item">
+          <div class="question">
+            <span>How do you handle food allergies and dietary restrictions?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="answer">
+            We take food allergies seriously and work closely with parents to provide safe meal options.
+          </div>
+        </div>
+      
+        
+        <div class="item">
+          <div class="question">
+            <span>What is the teacher-to-student ratio at Little Learners Academy?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="answer">
+            Our average ratio is 1 teacher for every 12 students to ensure personalized attention.
+          </div>
+        </div>
+      
+  
+        <div class="item">
+          <div class="question">
+            <span>How do you handle discipline and behavior management?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="answer">
+            We focus on positive reinforcement, guidance, and open communication with parents.
+          </div>
+        </div>
+      
+        
+        <div class="item">
+          <div class="question">
+            <span>How do I apply for admission to Little Learners Academy?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="answer">
+            Applications can be submitted online or at our front office. We also schedule tours for new parents.
+          </div>
+        </div>
+      
+        
+        <div class="item">
+          <div class="question">
+            <span>Do you provide transportation for students?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="answer">
+            Yes, we provide safe and reliable bus services with designated pick-up and drop-off points.
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+  
+
     <script>
       function show() {
         document.querySelector(".nav_items").classList.toggle("show");
@@ -195,6 +296,21 @@
         document.querySelector(".our_benefit_info").classList.toggle("dark");
         document.querySelector(".our_benefit_items").classList.toggle("dark");
       }
+
+      ///////////////////Ahmed Abdelhameed/////////////////////////////
+      /////////////////////////////////////////////////////////////
+      const items = document.querySelectorAll('.item');
+
+    items.forEach(item => {
+      item.querySelector('.question').addEventListener('click', () => {
+        item.classList.toggle('active');
+        
+        const icon = item.querySelector('.icon');
+        icon.textContent = item.classList.contains('active') ? '−' : '+';
+      });
+    });
+    
+
     </script>
   </body>
 </html>
