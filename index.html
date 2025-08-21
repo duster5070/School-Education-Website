@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="all.min.css" />
+  </head>
+  <body>
+    <button id="dark-theme" onclick="dark()">
+      <!-- Change Theme -->
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <header>
+      <div class="container">
+        <div class="header_img">
+          <img src="Assests/Top Banner.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <div class="nav_logo">
+            <div class="nav_logo_img">
+              <img src="Assests/shape-14.svg" alt="" />
+            </div>
+            <h3>Littel Learners</h3>
+          </div>
+          <div class="nav_items_button" onclick="show()">
+            <img src="Assests/Icon.svg" alt="" />
+          </div>
+          <div class="nav_items">
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Academics</li>
+              <li>Student Life</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="banner_section">
+        <div class="container">
+          <div class="hero_banner">
+            <div class="hero_banner_img">
+              <img src="Assests/Image Container.svg" alt="two childs" />
+            </div>
+
+            <div class="hero_banner_description">
+              <div class="hero_banner_description_info">
+                <p>Welcome To Little Learners Academy</p>
+                <div class="line"></div>
+                <h1>
+                  Where Young Mind Blossom and <span> Dreams Take Flight</span>
+                </h1>
+                <p>
+                  Our kinder garden school provides a nurturing and stimulating
+                  environment, fostering a love for learning that lasts a
+                  lifetime. Join us as we embark on an exciting educational
+                  journey together!
+                </p>
+              </div>
+
+              <div class="hero_banner_description_statistics">
+                <div class="student_passed">
+                  <p>+7000</p>
+                  <p>Students Passed Out</p>
+                </div>
+                <div class="awards">
+                  <p>+37</p>
+                  <p>Awards & Recognitions</p>
+                </div>
+                <div class="experience_Educators">
+                  <p>+15</p>
+                  <p>Experience Educators</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our_benefits">
+        <div class="container">
+          <div class="our_benefit_info">
+            <div>
+              <p>Children Deserve Bright Future</p>
+            </div>
+            <h2>Our Benefits</h2>
+            <p>
+              With a dedicated team of experienced educators, state-of-the-art
+              facilities, and a comprehensive curriculum, we aim to lay a strong
+              foundation for your child's future.
+            </p>
+          </div>
+
+          <div class="our_benefit_items">
+            <div class="our_benefit_item_container">
+              <div class="logo">
+                <img src="Assests/Icon_1.svg" alt="" />
+              </div>
+              <div class="card">
+                <h3>Holistic Learning Approach</h3>
+                <p>
+                  Our curriculum focuses on nurturing cognitive, social,
+                  emotional, and physical development, ensuring a well-rounded
+                  education.
+                </p>
+              </div>
+            </div>
+            <div class="our_benefit_item_container">
+              <div class="logo">
+                <img src="Assests/Icon_2.svg" alt="" />
+              </div>
+              <div class="card">
+                <h3>Experienced Educators</h3>
+                <p>
+                  Our passionate and qualified teachers create a supportive and
+                  stimulating learning environment.
+                </p>
+              </div>
+            </div>
+            <div class="our_benefit_item_container">
+              <div class="logo">
+                <img src="Assests/Icon_3.svg" alt="" />
+              </div>
+              <div class="card">
+                <h3>Nurturing Environment</h3>
+                <p>
+                  We prioritize safety and provide a warm and caring atmosphere
+                  for every child.
+                </p>
+              </div>
+            </div>
+            <div class="our_benefit_item_container">
+              <div class="logo">
+                <img src="Assests/Icon_4.svg" alt="" />
+              </div>
+              <div class="card">
+                <h3>Play-Based Learning</h3>
+                <p>
+                  We believe in the power of play to foster creativity,
+                  problem-solving skills, and imagination.
+                </p>
+              </div>
+            </div>
+            <div class="our_benefit_item_container">
+              <div class="logo">
+                <img src="Assests/Icon_5.svg" alt="" />
+              </div>
+              <div class="card">
+                <h3>Individualized Attention</h3>
+                <p>
+                  Our small class sizes enable personalized attention, catering
+                  to each child's unique needs.
+                </p>
+              </div>
+            </div>
+            <div class="our_benefit_item_container">
+              <div class="logo">
+                <img src="Assests/Icon_6.svg" alt="" />
+              </div>
+              <div class="card">
+                <h3>Parent Involvement</h3>
+                <p>
+                  We foster a strong parent-school partnership to ensure
+                  seamless communication and collaboration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      function show() {
+        document.querySelector(".nav_items").classList.toggle("show");
+      }
+      function dark() {
+        document.body.classList.toggle("dark");
+
+        document.getElementById("dark-theme").classList.toggle("dark");
+        document.querySelector(".navbar").classList.toggle("dark");
+        document.querySelector(".nav_items").classList.toggle("dark");
+        document
+          .querySelector(".hero_banner_description_info")
+          .classList.toggle("dark");
+        document.querySelector(".our_benefit_info").classList.toggle("dark");
+        document.querySelector(".our_benefit_items").classList.toggle("dark");
+      }
+    </script>
+  </body>
+</html>
